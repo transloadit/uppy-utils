@@ -1,0 +1,33 @@
+{
+  "name": "uppy-utils",
+  "version": "0.0.1",
+  "description": "Utility functions for use in Uppy",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/uppy-utils.git"
+  },
+  "keywords": [
+    "uppy",
+    "utilities"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/transloadit/uppy-utils/issues"
+  },
+  "homepage": "https://github.com/transloadit/uppy-utils#readme",
+  "dependencies": {
+    "mime-types": "^2.1.11"
+  },
+  "devDependencies": {
+    "babel-cli": "6.11.4",
+    "babel-preset-es2015": "^6.3.13"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "build:sourcemaps": "babel src --source-maps -d lib",
+    "start": "chokidar './src/**/*.js' -c 'npm run build:sourcemaps'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -27,7 +27,7 @@ module.exports = {
   generateFileID: require('./file/generateFileID'),
   getFileNameAndExtension: require('./file/getFileNameAndExtension'),
   getFileType: require('./file/getFileType'),
-  readFileAsDataURL: require('./file/readFileAsDataURL'),
+  readFileAsDataURI: require('./file/readFileAsDataURI'),
 
 // image
   createImageThumbnail: require('./image/createImageThumbnail'),

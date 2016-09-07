@@ -8,7 +8,7 @@
  * @param  {Boolean} toFile  Convert to File instead of Blob
  * @return {Blob}
  */
-export default function dataURItoBlob (dataURI, opts, toFile) {
+module.exports = function dataURItoBlob (dataURI, opts, toFile) {
   // get the base64 data
   var data = dataURI.split(',')[1]
 

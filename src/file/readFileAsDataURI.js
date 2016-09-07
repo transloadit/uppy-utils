@@ -6,7 +6,7 @@
  * @param  {Object}   fileObj File object
  * @return {Promise}          Resolves to dataURI of file
  */
-export default function readFileAsDataURI (fileObj) {
+module.exports = function readFileAsDataURI (fileObj) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader()
     reader.addEventListener('load', function (ev) {

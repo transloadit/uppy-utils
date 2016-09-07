@@ -9,6 +9,6 @@ import dataURItoBlob from './dataURItoBlob'
  * @param  {Object} opts    Conversion options.
  * @return {File}
  */
-export default function dataURItoFile (dataURI, opts) {
+module.exports = function dataURItoFile (dataURI, opts) {
   return dataURItoBlob(dataURI, opts, true)
 }

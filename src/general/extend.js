@@ -5,6 +5,6 @@
  * @param  {...Object} objs Objects to merge
  * @return {Object}         Merged object
  */
-export default function extend (...objs) {
+module.exports = function extend (...objs) {
   return Object.assign.apply(this, [{}].concat(objs))
 }

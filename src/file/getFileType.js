@@ -8,7 +8,7 @@ import mime from 'mime-types'
  * @param  {Object} file File
  * @return {String}      File type
  */
-export default function getFileType (file) {
+module.exports = function getFileType (file) {
   if (file.type) {
     return file.type
   }

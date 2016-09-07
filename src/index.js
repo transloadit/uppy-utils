@@ -6,30 +6,71 @@
  *
  * @module Utils
  */
-module.exports = {
+
 // general
-  extend: require('./general/extend'),
-  flatten: require('./general/flatten'),
-  getFnName: require('./general/getFnName'),
-  groupBy: require('./general/groupBy'),
-  secondsToTime: require('./general/secondsToTime'),
-  toArray: require('./general/toArray'),
-  truncateString: require('./general/truncateString'),
+import extend from './general/extend'
+import flatten from './general/flatten'
+import getFnName from './general/getFnName'
+import groupBy from './general/groupBy'
+import secondsToTime from './general/secondsToTime'
+import toArray from './general/toArray'
+import truncateString from './general/truncateString'
 
 // dom
-  isTouchDevice: require('./dom/isTouchDevice'),
-  $: require('./dom/querySelector'),
-  $$: require('./dom/querySelectorAll'),
+import isTouchDevice from './dom/isTouchDevice'
+import $ from './dom/querySelector'
+import $$ from './dom/querySelectorAll'
 
 // file
-  dataURItoBlob: require('./file/dataURItoBlob'),
-  dataURItoFile: require('./file/dataURItoFile'),
-  generateFileID: require('./file/generateFileID'),
-  getFileNameAndExtension: require('./file/getFileNameAndExtension'),
-  getFileType: require('./file/getFileType'),
-  readFileAsDataURI: require('./file/readFileAsDataURI'),
+import dataURItoBlob from './file/dataURItoBlob'
+import dataURItoFile from './file/dataURItoFile'
+import generateFileID from './file/generateFileID'
+import getFileNameAndExtension from './file/getFileNameAndExtension'
+import getFileType from './file/getFileType'
+import readFileAsDataURI from './file/readFileAsDataURI'
 
 // image
-  createImageThumbnail: require('./image/createImageThumbnail'),
-  getProportionalImageHeight: require('./image/getProportionalImageHeight'),
+import createImageThumbnail from './image/createImageThumbnail'
+import getProportionalImageHeight from './image/getProportionalImageHeight'
+
+export {
+  extend,
+  flatten,
+  getFnName,
+  groupBy,
+  secondsToTime,
+  toArray,
+  truncateString,
+  isTouchDevice,
+  $,
+  $$,
+  dataURItoBlob,
+  dataURItoFile,
+  generateFileID,
+  getFileNameAndExtension,
+  getFileType,
+  readFileAsDataURI,
+  createImageThumbnail,
+  getProportionalImageHeight
+}
+
+export default {
+  extend,
+  flatten,
+  getFnName,
+  groupBy,
+  secondsToTime,
+  toArray,
+  truncateString,
+  isTouchDevice,
+  $,
+  $$,
+  dataURItoBlob,
+  dataURItoFile,
+  generateFileID,
+  getFileNameAndExtension,
+  getFileType,
+  readFileAsDataURI,
+  createImageThumbnail,
+  getProportionalImageHeight
 }

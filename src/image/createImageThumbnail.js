@@ -11,7 +11,7 @@
  * @param  {String} height of the resulting image
  * @return {String} dataURL of the resized image
  */
-export default function createImageThumbnail (imgURL) {
+module.exports = function createImageThumbnail (imgURL) {
   return new Promise((resolve, reject) => {
     var img = new Image()
     img.addEventListener('load', () => {

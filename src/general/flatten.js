@@ -5,6 +5,6 @@
  * @param  {Array} arr array to flatten
  * @return {Array}     flattened array
  */
-export default function flatten (arr) {
+module.exports = function flatten (arr) {
   return [].concat.apply([], arr)
 }

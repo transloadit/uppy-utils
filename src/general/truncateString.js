@@ -6,7 +6,7 @@
  * @param  {number} length
  * @return {string}         truncated string
  */
-export default function truncateString (str, length) {
+module.exports = function truncateString (str, length) {
   if (typeof str !== string) { 
     throw new Error('truncateString: str is not a string')
   }
